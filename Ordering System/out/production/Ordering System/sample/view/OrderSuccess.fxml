@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="admin" fx:id="Ap" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="242.0" prefWidth="333.0" style="-fx-background-color: #000a12;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.Complete">
+   <children>
+      <Pane layoutX="-1.0" layoutY="88.0" prefHeight="62.0" prefWidth="333.0" style="-fx-background-color: #9c2827;">
+         <children>
+            <Label layoutX="116.0" layoutY="17.0" prefHeight="28.0" prefWidth="122.0" text="Thank You" textFill="#cdacac">
+               <font>
+                  <Font name="Doppio One Regular" size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <JFXButton fx:id="success" buttonType="RAISED" cancelButton="true" layoutX="129.0" layoutY="200.0" prefHeight="28.0" prefWidth="74.0" ripplerFill="#141414" style="-fx-background-color: #e45652;" text="ok" textFill="WHITESMOKE">
+         <font>
+            <Font name="Doppio One Regular" size="14.0" />
+         </font>
+         <effect>
+            <Glow level="0.26" />
+         </effect>
+      </JFXButton>
+      <Label layoutX="119.0" layoutY="165.0" prefHeight="18.0" prefWidth="99.0" text="Order Completed" textFill="#cfc2c2">
+         <font>
+            <Font name="Doppio One Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="315.0" layoutY="2.0" onMouseClicked="#handleClose" prefHeight="26.0" prefWidth="11.0" text="X" textFill="#b28787">
+         <font>
+            <Font name="Lucida Console" size="22.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="84.0" fitWidth="200.0" layoutX="69.0" pickOnBounds="true">
+         <image>
+            <Image url="@../icon/pngtree-background-red-blackred-or-black-mix-abstract-red-blackcolor-image_283017.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

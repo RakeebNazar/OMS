@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="465.0" prefWidth="916.0" style="-fx-background-color: #000a12;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.Order">
+   <children>
+      <TableView fx:id="orderTable" layoutX="30.0" layoutY="13.0" prefHeight="250.0" prefWidth="334.0" />
+      <Pane layoutX="575.0" layoutY="34.0" prefHeight="358.0" prefWidth="310.0" style="-fx-background-color: #9c2827;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="447.0" layoutY="11.0" text="Order" textFill="#f5f5f5">
+               <font>
+                  <Font name="Doppio One Regular" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="96.0" fitWidth="103.0" layoutX="211.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/JD-18-512.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="userName" contentDisplay="CENTER" layoutX="224.0" layoutY="89.0" prefHeight="18.0" prefWidth="69.0" style="-fx-text-fill: #dacccc;" textAlignment="CENTER" />
+            <JFXTextField fx:id="id" focusColor="#78909c" layoutX="31.0" layoutY="110.0" promptText="Product Id" style="-fx-text-fill: #dacccc;" unFocusColor="#cc8686">
+               <effect>
+                  <SepiaTone level="0.69" />
+               </effect>
+            </JFXTextField>
+            <JFXTextField fx:id="qty" focusColor="#78909c" layoutX="31.0" layoutY="146.0" promptText="Quantity" style="-fx-text-fill: #dacccc;" unFocusColor="#cc8686">
+               <effect>
+                  <SepiaTone level="0.69" />
+               </effect>
+            </JFXTextField>
+            <JFXTextField fx:id="total" focusColor="#78909c" layoutX="166.0" layoutY="211.0" promptText="Total" style="-fx-text-fill: #dacccc;" unFocusColor="#cc8686">
+               <effect>
+                  <SepiaTone level="0.69" />
+               </effect>
+            </JFXTextField>
+            <Label fx:id="creditLabel" layoutX="164.0" layoutY="259.0" text="Credit Limit =" textFill="#dfa5a5" visible="false" />
+            <Label fx:id="limit" layoutX="241.0" layoutY="259.0" text="Credit Limit" textFill="#dfa5a5" visible="false" />
+            <Label fx:id="error" layoutX="62.0" layoutY="297.0" prefHeight="26.0" prefWidth="244.0" text="Credit Limit Reached Please Delete a Item...!!" textFill="#010101" visible="false" />
+         </children>
+      </Pane>
+      <Button fx:id="addCart" layoutX="575.0" layoutY="420.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="148.0" style="-fx-background-color: #9c2827;" text="Add to cart" textFill="#dacccc">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="order" layoutX="737.0" layoutY="420.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="148.0" style="-fx-background-color: #9c2827;" text="Place Order" textFill="#dacccc">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TableView fx:id="cartTable" layoutX="30.0" layoutY="294.0" prefHeight="158.0" prefWidth="334.0" />
+      <Button fx:id="delete" layoutX="401.0" layoutY="294.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="148.0" style="-fx-background-color: #9c2827;" text="Delete" textFill="#dacccc">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="150.0" fitWidth="179.0" layoutX="386.0" pickOnBounds="true">
+         <image>
+            <Image url="@../icon/pngtree-background-red-blackred-or-black-mix-abstract-red-blackcolor-image_283017.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="898.0" layoutY="1.0" onMouseClicked="#handleClose" prefHeight="26.0" prefWidth="11.0" text="X" textFill="#b28787">
+         <font>
+            <Font name="Lucida Console" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

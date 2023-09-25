@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Ap" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="352.0" prefWidth="606.0" style="-fx-background-color: #000a12;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.Login">
+   <children>
+      <Pane layoutX="316.0" layoutY="40.0" prefHeight="269.0" prefWidth="240.0" style="-fx-background-color: #9c2827;">
+         <children>
+            <Label layoutX="92.0" layoutY="32.0" prefHeight="30.0" prefWidth="63.0" text="Sign In" textAlignment="CENTER" textFill="#cdacac">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="username" focusColor="#05466e" layoutX="26.0" layoutY="78.0" prefHeight="25.0" prefWidth="194.0" promptText="User Name" style="-fx-text-fill: #dacccc;" unFocusColor="#cc8686">
+               <effect>
+                  <SepiaTone level="0.69" />
+               </effect>
+            </JFXTextField>
+            <JFXPasswordField fx:id="password" focusColor="#05466e" layoutX="26.0" layoutY="126.0" prefHeight="25.0" prefWidth="194.0" promptText="Password" style="-fx-text-fill: #cc86 #dacccc86;" unFocusColor="#cc8686">
+               <effect>
+                  <SepiaTone level="0.69" />
+               </effect>
+            </JFXPasswordField>
+            <JFXButton fx:id="login" layoutX="26.0" layoutY="192.0" prefHeight="30.0" prefWidth="194.0" style="-fx-background-color: #e45652;" text="Sign In" textFill="#dacccc" />
+         </children>
+      </Pane>
+      <JFXButton fx:id="signUp" layoutX="43.0" layoutY="209.0" prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: #e45652;" text="Sign Up" textFill="#dacccc">
+         <effect>
+            <Glow level="0.26" />
+         </effect>
+      </JFXButton>
+      <Label fx:id="Error" layoutX="396.0" layoutY="314.0" prefHeight="24.0" prefWidth="79.0" text="Login Error!" textFill="#e85a3d" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="118.0" prefHeight="30.0" prefWidth="234.0" text="Welcome to United Shop" textFill="#cfc1c1">
+         <font>
+            <Font name="Doppio One Regular" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="161.0" opacity="0.84" prefHeight="30.0" prefWidth="130.0" text="Happiness or sad, &#10;never stay away from food" textFill="#cfc1c1">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="584.0" layoutY="-1.0" onMouseClicked="#handleClose" prefHeight="26.0" prefWidth="11.0" text="X" textFill="#b28787">
+         <font>
+            <Font name="Lucida Console" size="22.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="117.0" fitWidth="209.0" layoutX="43.0" pickOnBounds="true">
+         <image>
+            <Image url="@../icon/pngtree-background-red-blackred-or-black-mix-abstract-red-blackcolor-image_283017.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
